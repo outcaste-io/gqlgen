@@ -6,7 +6,7 @@ import (
 	"time"
 
 	"github.com/99designs/gqlgen/graphql"
-	"github.com/vektah/gqlparser/v2/ast"
+	"github.com/dgraph-io/gqlparser/v2/ast"
 )
 
 type (

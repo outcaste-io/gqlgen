@@ -14,8 +14,8 @@ import (
 	"github.com/99designs/gqlgen/graphql/introspection"
 	models "github.com/99designs/gqlgen/integration/models-go"
 	"github.com/99designs/gqlgen/integration/remote_api"
-	gqlparser "github.com/vektah/gqlparser/v2"
-	"github.com/vektah/gqlparser/v2/ast"
+	gqlparser "github.com/dgraph-io/gqlparser/v2"
+	"github.com/dgraph-io/gqlparser/v2/ast"
 )
 
 // region    ************************** generated!.gotpl **************************

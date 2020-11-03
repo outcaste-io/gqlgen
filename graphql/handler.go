@@ -6,7 +6,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/vektah/gqlparser/v2/gqlerror"
+	"github.com/dgraph-io/gqlparser/v2/gqlerror"
 )
 
 type (

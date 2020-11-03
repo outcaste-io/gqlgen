@@ -1,10 +1,10 @@
-# gqlgen [![Continuous Integration](https://github.com/99designs/gqlgen/workflows/Continuous%20Integration/badge.svg)](https://github.com/99designs/gqlgen/actions) [![Read the Docs](https://badgen.net/badge/docs/available/green)](http://gqlgen.com/) [![GoDoc](https://godoc.org/github.com/99designs/gqlgen?status.svg)](https://godoc.org/github.com/99designs/gqlgen)
+# gqlgen [![Continuous Integration](https://github.com/dgraph-io/gqlgen/workflows/Continuous%20Integration/badge.svg)](https://github.com/dgraph-io/gqlgen/actions) [![Read the Docs](https://badgen.net/badge/docs/available/green)](http://gqlgen.com/) [![GoDoc](https://godoc.org/github.com/dgraph-io/gqlgen?status.svg)](https://godoc.org/github.com/dgraph-io/gqlgen)
 
 ![gqlgen](https://user-images.githubusercontent.com/46195831/89802919-0bb8ef00-db2a-11ea-8ba4-88e7a58b2fd2.png)
 
 ## What is gqlgen?
 
-[gqlgen](https://github.com/99designs/gqlgen) is a Go library for building GraphQL servers without any fuss.<br/> 
+[gqlgen](https://github.com/dgraph-io/gqlgen) is a Go library for building GraphQL servers without any fuss.<br/>
 
 - **gqlgen is based on a Schema first approach** — You get to Define your API using the GraphQL [Schema Definition Language](http://graphql.org/learn/schema/).
 - **gqlgen prioritizes Type safety** — You should never see `map[string]interface{}` here.
@@ -13,20 +13,20 @@
 Still not convinced enough to use **gqlgen**? Compare **gqlgen** with other Go graphql [implementations](https://gqlgen.com/feature-comparison/)
 
 ## Getting Started
-- To install gqlgen run the command `go get github.com/99designs/gqlgen` in your project directory.<br/> 
-- You could initialize a new project using the recommended folder structure by running this command `go run github.com/99designs/gqlgen init`.
+- To install gqlgen run the command `go get github.com/dgraph-io/gqlgen` in your project directory.<br/>
+- You could initialize a new project using the recommended folder structure by running this command `go run github.com/dgraph-io/gqlgen init`.
 
 You could find a more comprehensive guide to help you get started [here](https://gqlgen.com/getting-started/).<br/>
-We also have a couple of real-world [examples](https://github.com/99designs/gqlgen/tree/master/example) that show how to GraphQL applications with **gqlgen** seamlessly,
-You can see these [examples](https://github.com/99designs/gqlgen/tree/master/example) here or visit [godoc](https://godoc.org/github.com/99designs/gqlgen).
+We also have a couple of real-world [examples](https://github.com/dgraph-io/gqlgen/tree/master/example) that show how to GraphQL applications with **gqlgen** seamlessly,
+You can see these [examples](https://github.com/dgraph-io/gqlgen/tree/master/example) here or visit [godoc](https://godoc.org/github.com/dgraph-io/gqlgen).
 
 ## Reporting Issues
 
-If you think you've found a bug, or something isn't behaving the way you think it should, please raise an [issue](https://github.com/99designs/gqlgen/issues) on GitHub.
+If you think you've found a bug, or something isn't behaving the way you think it should, please raise an [issue](https://github.com/dgraph-io/gqlgen/issues) on GitHub.
 
 ## Contributing
 
-We welcome contributions, Read our [Contribution Guidelines](https://github.com/99designs/gqlgen/blob/master/CONTRIBUTING.md) to learn more about contributing to **gqlgen**
+We welcome contributions, Read our [Contribution Guidelines](https://github.com/dgraph-io/gqlgen/blob/master/CONTRIBUTING.md) to learn more about contributing to **gqlgen**
 ## Frequently asked questions
 
 ### How do I prevent fetching child objects that might not be used?
@@ -93,8 +93,8 @@ Yes! You can by remapping it in config as seen below:
 models:
   ID: # The GraphQL type ID is backed by
     model:
-      - github.com/99designs/gqlgen/graphql.IntID # An go integer
-      - github.com/99designs/gqlgen/graphql.ID # or a go string
+      - github.com/dgraph-io/gqlgen/graphql.IntID # An go integer
+      - github.com/dgraph-io/gqlgen/graphql.ID # or a go string
 ```
 
 This means gqlgen will be able to automatically bind to strings or ints for models you have written yourself, but the

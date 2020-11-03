@@ -7,10 +7,10 @@
 {{ reserveImport "errors"  }}
 {{ reserveImport "bytes"  }}
 
-{{ reserveImport "github.com/vektah/gqlparser/v2" }}
-{{ reserveImport "github.com/vektah/gqlparser/v2/ast" }}
-{{ reserveImport "github.com/99designs/gqlgen/graphql" }}
-{{ reserveImport "github.com/99designs/gqlgen/graphql/introspection" }}
+{{ reserveImport "github.com/dgraph-io/gqlparser/v2" }}
+{{ reserveImport "github.com/dgraph-io/gqlparser/v2/ast" }}
+{{ reserveImport "github.com/dgraph-io/gqlgen/graphql" }}
+{{ reserveImport "github.com/dgraph-io/gqlgen/graphql/introspection" }}
 
 {{ .Imports }}
 

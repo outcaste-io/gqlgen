@@ -20,8 +20,8 @@ package foo
 import (
 	"context"
 
-	"github.com/vektah/gqlparser/v2/gqlerror"
-	"github.com/99designs/gqlgen/graphql"
+	"github.com/dgraph-io/gqlparser/v2/gqlerror"
+	"github.com/dgraph-io/gqlgen/graphql"
 )
 
 func (r Query) DoThings(ctx context.Context) (bool, error) {
@@ -77,9 +77,9 @@ import (
 	"context"
 	"errors"
 
-	"github.com/vektah/gqlparser/v2/gqlerror"
-	"github.com/99designs/gqlgen/graphql"
-	"github.com/99designs/gqlgen/graphql/handler"
+	"github.com/dgraph-io/gqlparser/v2/gqlerror"
+	"github.com/dgraph-io/gqlgen/graphql"
+	"github.com/dgraph-io/gqlgen/graphql/handler"
 )
 
 func main() {

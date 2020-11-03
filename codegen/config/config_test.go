@@ -6,11 +6,11 @@ import (
 	"runtime"
 	"testing"
 
+	"github.com/dgraph-io/gqlparser/v2"
+	"github.com/dgraph-io/gqlparser/v2/ast"
 	"github.com/pkg/errors"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"github.com/vektah/gqlparser/v2"
-	"github.com/vektah/gqlparser/v2/ast"
 
 	"github.com/99designs/gqlgen/internal/code"
 )

@@ -7,8 +7,8 @@ import (
 	"unicode"
 
 	"github.com/99designs/gqlgen/codegen/config"
+	"github.com/dgraph-io/gqlparser/v2/ast"
 	"github.com/pkg/errors"
-	"github.com/vektah/gqlparser/v2/ast"
 )
 
 type GoFieldType int

@@ -8,7 +8,7 @@ menu: { main: { parent: 'recipes' } }
 ## Updated gqlparser
 
 gqlparser had a breaking change, if you have any references to it in your project your going to need to update
-them from `github.com/vektah/gqlparser` to `github.com/vektah/gqlparser/v2`.
+them from `github.com/dgraph-io/gqlparser` to `github.com/dgraph-io/gqlparser/v2`.
 
 ```bash
 sed -i 's/github.com\/vektah\/gqlparser/github.com\/vektah\/gqlparser\/v2/' $(find -name '*.go')

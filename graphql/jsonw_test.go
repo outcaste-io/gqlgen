@@ -4,8 +4,8 @@ import (
 	"bytes"
 	"testing"
 
+	"github.com/dgraph-io/gqlparser/v2/ast"
 	"github.com/stretchr/testify/require"
-	"github.com/vektah/gqlparser/v2/ast"
 )
 
 func TestJsonWriter(t *testing.T) {

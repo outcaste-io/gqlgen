@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"sort"
 
+	"github.com/dgraph-io/gqlparser/v2/ast"
 	"github.com/pkg/errors"
-	"github.com/vektah/gqlparser/v2/ast"
 
 	"github.com/99designs/gqlgen/codegen/config"
 )

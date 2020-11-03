@@ -9,8 +9,8 @@ import (
 
 	"github.com/99designs/gqlgen/client"
 	"github.com/99designs/gqlgen/graphql/handler"
+	"github.com/dgraph-io/gqlparser/v2/gqlerror"
 	"github.com/stretchr/testify/require"
-	"github.com/vektah/gqlparser/v2/gqlerror"
 )
 
 func TestPanics(t *testing.T) {

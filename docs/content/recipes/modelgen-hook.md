@@ -19,9 +19,9 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/99designs/gqlgen/api"
-	"github.com/99designs/gqlgen/codegen/config"
-	"github.com/99designs/gqlgen/plugin/modelgen"
+	"github.com/dgraph-io/gqlgen/api"
+	"github.com/dgraph-io/gqlgen/codegen/config"
+	"github.com/dgraph-io/gqlgen/plugin/modelgen"
 )
 
 // Defining mutation function

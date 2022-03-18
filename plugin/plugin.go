@@ -3,9 +3,9 @@
 package plugin
 
 import (
-	"github.com/99designs/gqlgen/codegen"
-	"github.com/99designs/gqlgen/codegen/config"
-	"github.com/dgraph-io/gqlparser/v2/ast"
+	"github.com/outcaste-io/gqlgen/codegen"
+	"github.com/outcaste-io/gqlgen/codegen/config"
+	"github.com/outcaste-io/gqlparser/v2/ast"
 )
 
 type Plugin interface {

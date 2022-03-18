@@ -3,7 +3,7 @@ package introspection
 import (
 	"strings"
 
-	"github.com/dgraph-io/gqlparser/v2/ast"
+	"github.com/outcaste-io/gqlparser/v2/ast"
 )
 
 type Type struct {

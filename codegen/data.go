@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"sort"
 
-	"github.com/dgraph-io/gqlparser/v2/ast"
+	"github.com/outcaste-io/gqlparser/v2/ast"
 	"github.com/pkg/errors"
 
-	"github.com/99designs/gqlgen/codegen/config"
+	"github.com/outcaste-io/gqlgen/codegen/config"
 )
 
 // Data is a unified model of the code to be generated. Plugins may modify this structure to do things like implement

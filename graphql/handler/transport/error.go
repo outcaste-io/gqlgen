@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/99designs/gqlgen/graphql"
-	"github.com/dgraph-io/gqlparser/v2/gqlerror"
+	"github.com/outcaste-io/gqlgen/graphql"
+	"github.com/outcaste-io/gqlparser/v2/gqlerror"
 )
 
 // SendError sends a best effort error to a raw response writer. It assumes the client can understand the standard

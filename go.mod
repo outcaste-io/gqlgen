@@ -1,10 +1,9 @@
-module github.com/dgraph-io/gqlgen
+module github.com/outcaste-io/gqlgen
 
 go 1.12
 
 require (
-	github.com/99designs/gqlgen v0.13.0
-	github.com/dgraph-io/gqlparser/v2 v2.1.1
+	github.com/outcaste-io/gqlparser/v2 v2.2.3
 	github.com/go-chi/chi v3.3.2+incompatible
 	github.com/gorilla/mux v1.8.0 // indirect
 	github.com/gorilla/websocket v1.4.2
@@ -18,6 +17,7 @@ require (
 	github.com/opentracing/opentracing-go v1.1.0
 	github.com/pkg/errors v0.8.1
 	github.com/rs/cors v1.6.0
+	github.com/sergi/go-diff v1.2.0 // indirect
 	github.com/stretchr/testify v1.5.1
 	github.com/urfave/cli/v2 v2.1.1
 	github.com/vektah/dataloaden v0.2.1-0.20190515034641-a19b9a6e7c9e

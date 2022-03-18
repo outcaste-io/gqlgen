@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/99designs/gqlgen/graphql"
-	"github.com/dgraph-io/gqlparser/v2/gqlerror"
+	"github.com/outcaste-io/gqlgen/graphql"
+	"github.com/outcaste-io/gqlparser/v2/gqlerror"
 )
 
 func writeJson(w io.Writer, response *graphql.Response) {

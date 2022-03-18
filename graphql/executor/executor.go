@@ -3,12 +3,12 @@ package executor
 import (
 	"context"
 
-	"github.com/99designs/gqlgen/graphql"
-	"github.com/99designs/gqlgen/graphql/errcode"
-	"github.com/dgraph-io/gqlparser/v2/ast"
-	"github.com/dgraph-io/gqlparser/v2/gqlerror"
-	"github.com/dgraph-io/gqlparser/v2/parser"
-	"github.com/dgraph-io/gqlparser/v2/validator"
+	"github.com/outcaste-io/gqlgen/graphql"
+	"github.com/outcaste-io/gqlgen/graphql/errcode"
+	"github.com/outcaste-io/gqlparser/v2/ast"
+	"github.com/outcaste-io/gqlparser/v2/gqlerror"
+	"github.com/outcaste-io/gqlparser/v2/parser"
+	"github.com/outcaste-io/gqlparser/v2/validator"
 )
 
 // Executor executes graphql queries against a schema.
@@ -177,7 +177,7 @@ func (e *Executor) parseQuery(ctx context.Context, stats *graphql.Stats, query s
 	stats.Parsing.End = graphql.Now()
 
 	stats.Validation.Start = graphql.Now()
-	listErr := validator.Validate(e.es.Schema(), doc)
+	listErr := validator.Validate(e.es.Schema(), doc, nil)
 	if len(listErr) != 0 {
 		for _, e := range listErr {
 			errcode.Set(e, errcode.ValidationFailed)

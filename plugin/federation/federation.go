@@ -5,12 +5,12 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/dgraph-io/gqlparser/v2/ast"
+	"github.com/outcaste-io/gqlparser/v2/ast"
 
-	"github.com/99designs/gqlgen/codegen"
-	"github.com/99designs/gqlgen/codegen/config"
-	"github.com/99designs/gqlgen/codegen/templates"
-	"github.com/99designs/gqlgen/plugin"
+	"github.com/outcaste-io/gqlgen/codegen"
+	"github.com/outcaste-io/gqlgen/codegen/config"
+	"github.com/outcaste-io/gqlgen/codegen/templates"
+	"github.com/outcaste-io/gqlgen/plugin"
 )
 
 type federation struct {
@@ -33,21 +33,21 @@ func (f *federation) MutateConfig(cfg *config.Config) error {
 	builtins := config.TypeMap{
 		"_Service": {
 			Model: config.StringList{
-				"github.com/99designs/gqlgen/plugin/federation/fedruntime.Service",
+				"github.com/outcaste-io/gqlgen/plugin/federation/fedruntime.Service",
 			},
 		},
 		"_Entity": {
 			Model: config.StringList{
-				"github.com/99designs/gqlgen/plugin/federation/fedruntime.Entity",
+				"github.com/outcaste-io/gqlgen/plugin/federation/fedruntime.Entity",
 			},
 		},
 		"Entity": {
 			Model: config.StringList{
-				"github.com/99designs/gqlgen/plugin/federation/fedruntime.Entity",
+				"github.com/outcaste-io/gqlgen/plugin/federation/fedruntime.Entity",
 			},
 		},
 		"_Any": {
-			Model: config.StringList{"github.com/99designs/gqlgen/graphql.Map"},
+			Model: config.StringList{"github.com/outcaste-io/gqlgen/graphql.Map"},
 		},
 	}
 	for typeName, entry := range builtins {

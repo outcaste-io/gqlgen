@@ -6,7 +6,7 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/dgraph-io/gqlparser/v2/ast"
+	"github.com/outcaste-io/gqlparser/v2/ast"
 )
 
 type ExecutableSchema interface {

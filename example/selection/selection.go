@@ -7,8 +7,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/99designs/gqlgen/graphql"
-	"github.com/dgraph-io/gqlparser/v2/ast"
+	"github.com/outcaste-io/gqlgen/graphql"
+	"github.com/outcaste-io/gqlparser/v2/ast"
 )
 
 type Resolver struct{}

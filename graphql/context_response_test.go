@@ -5,8 +5,8 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/dgraph-io/gqlparser/v2/ast"
-	"github.com/dgraph-io/gqlparser/v2/gqlerror"
+	"github.com/outcaste-io/gqlparser/v2/ast"
+	"github.com/outcaste-io/gqlparser/v2/gqlerror"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

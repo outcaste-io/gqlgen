@@ -1,6 +1,6 @@
 package graph
 
-import "github.com/99designs/gqlgen/example/federation/reviews/graph/model"
+import "github.com/outcaste-io/gqlgen/example/federation/reviews/graph/model"
 
 var reviews = []*model.Review{
 	{

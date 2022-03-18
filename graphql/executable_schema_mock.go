@@ -5,8 +5,9 @@ package graphql
 
 import (
 	"context"
-	"github.com/dgraph-io/gqlparser/v2/ast"
 	"sync"
+
+	"github.com/outcaste-io/gqlparser/v2/ast"
 )
 
 var (

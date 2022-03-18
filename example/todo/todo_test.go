@@ -3,9 +3,9 @@ package todo
 import (
 	"testing"
 
-	"github.com/99designs/gqlgen/client"
-	"github.com/99designs/gqlgen/graphql/handler"
-	"github.com/99designs/gqlgen/graphql/introspection"
+	"github.com/outcaste-io/gqlgen/client"
+	"github.com/outcaste-io/gqlgen/graphql/handler"
+	"github.com/outcaste-io/gqlgen/graphql/introspection"
 	"github.com/stretchr/testify/require"
 )
 

@@ -7,12 +7,12 @@ import (
 	"net/url"
 	"testing"
 
-	"github.com/99designs/gqlgen/graphql"
-	"github.com/99designs/gqlgen/graphql/handler/testserver"
-	"github.com/99designs/gqlgen/graphql/handler/transport"
-	"github.com/dgraph-io/gqlparser/v2/ast"
-	"github.com/dgraph-io/gqlparser/v2/gqlerror"
-	"github.com/dgraph-io/gqlparser/v2/parser"
+	"github.com/outcaste-io/gqlgen/graphql"
+	"github.com/outcaste-io/gqlgen/graphql/handler/testserver"
+	"github.com/outcaste-io/gqlgen/graphql/handler/transport"
+	"github.com/outcaste-io/gqlparser/v2/ast"
+	"github.com/outcaste-io/gqlparser/v2/gqlerror"
+	"github.com/outcaste-io/gqlparser/v2/parser"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

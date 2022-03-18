@@ -4,7 +4,7 @@ import (
 	"context"
 	"errors"
 
-	"github.com/dgraph-io/gqlparser/v2/ast"
+	"github.com/outcaste-io/gqlparser/v2/ast"
 )
 
 // Deprecated: Please update all references to OperationContext instead

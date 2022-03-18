@@ -3,7 +3,7 @@ package graphql
 import (
 	"context"
 
-	"github.com/dgraph-io/gqlparser/v2/ast"
+	"github.com/outcaste-io/gqlparser/v2/ast"
 )
 
 const fieldInputCtx key = "path_context"

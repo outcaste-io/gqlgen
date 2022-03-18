@@ -4,8 +4,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/99designs/gqlgen/client"
-	"github.com/99designs/gqlgen/graphql/handler"
+	"github.com/outcaste-io/gqlgen/client"
+	"github.com/outcaste-io/gqlgen/graphql/handler"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )
@@ -13,16 +13,16 @@ import (
 func TestChatSubscriptions(t *testing.T) {
 	c := client.New(handler.NewDefaultServer(NewExecutableSchema(New())))
 
-	sub := c.Websocket(`subscription @user(username:"vektah") { messageAdded(roomName:"#gophers") { text createdBy } }`)
+	sub := c.Websocket(`subscription @user(username:"outcaste-io") { messageAdded(roomName:"#gophers") { text createdBy } }`)
 	defer sub.Close()
 
 	go func() {
 		var resp interface{}
 		time.Sleep(10 * time.Millisecond)
 		err := c.Post(`mutation { 
-				a:post(text:"Hello!", roomName:"#gophers", username:"vektah") { id } 
-				b:post(text:"Hello Vektah!", roomName:"#gophers", username:"andrey") { id } 
-				c:post(text:"Whats up?", roomName:"#gophers", username:"vektah") { id } 
+				a:post(text:"Hello!", roomName:"#gophers", username:"outcaste-io") { id } 
+				b:post(text:"Hello Outcaste-Io!", roomName:"#gophers", username:"andrey") { id } 
+				c:post(text:"Whats up?", roomName:"#gophers", username:"outcaste-io") { id } 
 			}`, &resp)
 		assert.NoError(t, err)
 	}()
@@ -40,10 +40,10 @@ func TestChatSubscriptions(t *testing.T) {
 	msg.err = sub.Next(&msg.resp)
 	require.NoError(t, msg.err, "sub.Next")
 	require.Equal(t, "Hello!", msg.resp.MessageAdded.Text)
-	require.Equal(t, "vektah", msg.resp.MessageAdded.CreatedBy)
+	require.Equal(t, "outcaste-io", msg.resp.MessageAdded.CreatedBy)
 
 	msg.err = sub.Next(&msg.resp)
 	require.NoError(t, msg.err, "sub.Next")
 	require.Equal(t, "Whats up?", msg.resp.MessageAdded.Text)
-	require.Equal(t, "vektah", msg.resp.MessageAdded.CreatedBy)
+	require.Equal(t, "outcaste-io", msg.resp.MessageAdded.CreatedBy)
 }

@@ -5,8 +5,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/99designs/gqlgen/codegen/templates"
-	"github.com/dgraph-io/gqlparser/v2/ast"
+	"github.com/outcaste-io/gqlgen/codegen/templates"
+	"github.com/outcaste-io/gqlparser/v2/ast"
 	"github.com/pkg/errors"
 )
 

@@ -6,15 +6,15 @@ import (
 	"net/url"
 	"time"
 
-	"github.com/99designs/gqlgen/graphql/handler/extension"
-	"github.com/99designs/gqlgen/graphql/handler/transport"
+	"github.com/outcaste-io/gqlgen/graphql/handler/extension"
+	"github.com/outcaste-io/gqlgen/graphql/handler/transport"
 
-	"github.com/99designs/gqlgen/graphql/playground"
+	"github.com/outcaste-io/gqlgen/graphql/playground"
 
-	"github.com/99designs/gqlgen/example/chat"
-	"github.com/99designs/gqlgen/graphql/handler"
 	"github.com/gorilla/websocket"
 	"github.com/opentracing/opentracing-go"
+	"github.com/outcaste-io/gqlgen/example/chat"
+	"github.com/outcaste-io/gqlgen/graphql/handler"
 	"github.com/rs/cors"
 	"sourcegraph.com/sourcegraph/appdash"
 	appdashtracer "sourcegraph.com/sourcegraph/appdash/opentracing"

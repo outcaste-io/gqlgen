@@ -5,7 +5,7 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/dgraph-io/gqlparser/v2/gqlerror"
+	"github.com/outcaste-io/gqlparser/v2/gqlerror"
 )
 
 // Errors are intentionally serialized first based on the advice in

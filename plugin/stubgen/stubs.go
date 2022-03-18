@@ -4,12 +4,12 @@ import (
 	"path/filepath"
 	"syscall"
 
-	"github.com/99designs/gqlgen/internal/code"
+	"github.com/outcaste-io/gqlgen/internal/code"
 
-	"github.com/99designs/gqlgen/codegen"
-	"github.com/99designs/gqlgen/codegen/config"
-	"github.com/99designs/gqlgen/codegen/templates"
-	"github.com/99designs/gqlgen/plugin"
+	"github.com/outcaste-io/gqlgen/codegen"
+	"github.com/outcaste-io/gqlgen/codegen/config"
+	"github.com/outcaste-io/gqlgen/codegen/templates"
+	"github.com/outcaste-io/gqlgen/plugin"
 )
 
 func New(filename string, typename string) plugin.Plugin {

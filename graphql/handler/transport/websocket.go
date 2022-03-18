@@ -10,10 +10,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/99designs/gqlgen/graphql"
-	"github.com/99designs/gqlgen/graphql/errcode"
-	"github.com/dgraph-io/gqlparser/v2/gqlerror"
 	"github.com/gorilla/websocket"
+	"github.com/outcaste-io/gqlgen/graphql"
+	"github.com/outcaste-io/gqlgen/graphql/errcode"
+	"github.com/outcaste-io/gqlparser/v2/gqlerror"
 )
 
 const (

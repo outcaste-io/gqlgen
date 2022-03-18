@@ -6,12 +6,12 @@ import (
 	"encoding/hex"
 	"fmt"
 
-	"github.com/99designs/gqlgen/graphql/errcode"
+	"github.com/outcaste-io/gqlgen/graphql/errcode"
 
-	"github.com/dgraph-io/gqlparser/v2/gqlerror"
+	"github.com/outcaste-io/gqlparser/v2/gqlerror"
 
-	"github.com/99designs/gqlgen/graphql"
 	"github.com/mitchellh/mapstructure"
+	"github.com/outcaste-io/gqlgen/graphql"
 )
 
 const errPersistedQueryNotFound = "PersistedQueryNotFound"

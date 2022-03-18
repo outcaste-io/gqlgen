@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"go/types"
 
-	"github.com/dgraph-io/gqlparser/v2/ast"
+	"github.com/outcaste-io/gqlparser/v2/ast"
 	"github.com/pkg/errors"
 
-	"github.com/99designs/gqlgen/codegen/config"
+	"github.com/outcaste-io/gqlgen/codegen/config"
 )
 
 type Interface struct {

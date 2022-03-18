@@ -4,9 +4,9 @@ import (
 	"math"
 	"testing"
 
-	"github.com/99designs/gqlgen/graphql"
-	"github.com/dgraph-io/gqlparser/v2"
-	"github.com/dgraph-io/gqlparser/v2/ast"
+	"github.com/outcaste-io/gqlgen/graphql"
+	"github.com/outcaste-io/gqlparser/v2"
+	"github.com/outcaste-io/gqlparser/v2/ast"
 	"github.com/stretchr/testify/require"
 )
 

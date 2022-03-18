@@ -7,12 +7,12 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/99designs/gqlgen/graphql"
-	"github.com/99designs/gqlgen/graphql/executor"
-	"github.com/99designs/gqlgen/graphql/handler/extension"
-	"github.com/99designs/gqlgen/graphql/handler/lru"
-	"github.com/99designs/gqlgen/graphql/handler/transport"
-	"github.com/dgraph-io/gqlparser/v2/gqlerror"
+	"github.com/outcaste-io/gqlgen/graphql"
+	"github.com/outcaste-io/gqlgen/graphql/executor"
+	"github.com/outcaste-io/gqlgen/graphql/handler/extension"
+	"github.com/outcaste-io/gqlgen/graphql/handler/lru"
+	"github.com/outcaste-io/gqlgen/graphql/handler/transport"
+	"github.com/outcaste-io/gqlparser/v2/gqlerror"
 )
 
 type (
